@@ -9,12 +9,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .brand{display:inline-flex;align-items:center;gap:.55rem;text-decoration:none;}
+    .brand-icon{width:28px;height:28px;object-fit:contain;display:block;}
+  </style>
 </head>
 <body>
 
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="index.html">Leonardo Fierro</a>
+    <a class="brand" href="index.html">
+      <img src="assets/Leo_Icon.png" alt="Leo icon" class="brand-icon" />
+      <span>Leonardo Fierro</span>
+    </a>
     <nav class="nav-links">
       <a class="active" href="index.html">Home</a>
       <a href="projects.html">Projects</a>
@@ -28,8 +35,8 @@
   <section class="hero">
     <div class="container hero-grid hero-grid-profile">
       <div>
-        <span class="kicker">Research scientist · audio DSP · software tools · rugby · music</span>
-        <h1>Hi, I’m Leonardo Fierro.</h1>
+        <span class="kicker">D.Sc. (Tech) · Audio DSP · Rugby · Music</span>
+        <h1>Hi, I’m Leo!</h1>
         <p class="lead">I build things at the intersection of audio signal processing, practical software tooling, sport, and creative projects. My background is in audio DSP, but my work and interests also stretch into machine learning, rugby analytics, game prototypes, coaching, and music.</p>
         <div class="actions">
           <a class="button primary" href="projects.html">Browse all projects</a>
@@ -40,11 +47,8 @@
       <aside class="card photo-card">
         <h3>Photo</h3>
         <div class="photo-placeholder">
-          <span>Add your portrait here</span>
+          <img src="assets/Leo_Portrait.jpeg" alt="Portrait" class="profile-photo" />
         </div>
-        <p class="small">Replace this placeholder with your own image.</p>
-<pre class="code-hint">&lt;!-- Example --&gt;
-&lt;img src="assets/leonardo-profile.jpg" alt="Portrait of Leonardo Fierro" class="profile-photo" /&gt;</pre>
       </aside>
     </div>
   </section>
