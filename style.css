@@ -75,6 +75,10 @@ h3 { font-size: 1.15rem; }
 .stat-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 1.3rem; }
 .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.music-grid {
+  display: grid;
+  gap: 1rem;
+}
 .stat-number { font-size: 1.7rem; font-weight: 800; }
 .stat-label { color: var(--muted); font-size: 0.95rem; }
 .section { padding: 1rem 0 3rem; }
@@ -91,6 +95,42 @@ h3 { font-size: 1.15rem; }
 .project-card .meta, .meta-list { color: var(--muted); font-size: 0.95rem; }
 .project-card p { margin: 0; }
 .project-card .footer-links { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: auto; padding-top: 0.5rem; }
+.music-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.music-card h3 {
+  margin: 0;
+}
+.music-split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.embed-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.embed-shell {
+  min-height: 352px;
+}
+.video-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 352px;
+  padding: 1.25rem;
+  border: 1px dashed rgba(157,225,255,0.3);
+  border-radius: 18px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02)),
+    radial-gradient(circle at top left, rgba(119,168,255,0.12), transparent 45%);
+  color: var(--muted);
+  font-weight: 600;
+  text-align: center;
+}
 .callout {
   border-left: 4px solid var(--accent); padding: 1rem 1rem 1rem 1.1rem; background: rgba(255,255,255,0.03); border-radius: 16px;
 }
@@ -313,6 +353,9 @@ footer { padding: 2rem 0 3rem; color: var(--muted); }
   .about-hero-grid,
   .publication-grid,
   .highlight-grid {
+    grid-template-columns: 1fr;
+  }
+  .music-split {
     grid-template-columns: 1fr;
   }
   .timeline::before {
